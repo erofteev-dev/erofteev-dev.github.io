@@ -38,6 +38,12 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Create gh-pages branch if not exists
+        run: |
+          git fetch origin gh-pages || echo "gh-pages branch does not exist yet"
+          git checkout -b gh-pages || echo "Already on gh-pages branch"
+        continue-on-error: true
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
