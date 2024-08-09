@@ -13,7 +13,7 @@
 		"url": "https://github.com/erofteev-dev/erofteev-dev.github.io"
 	},
 	"scripts": {
-		"build": "npx eleventy",
+		"build": "rm -rf site && npx eleventy",
 		"serve": "rm -rf site && npx eleventy --serve",
 		"watch": "npx eleventy --watch"
 	},
