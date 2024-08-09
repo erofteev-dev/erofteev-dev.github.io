@@ -1,6 +1,9 @@
 name: Build and Deploy
 
 on:
+  push:
+    branches:
+      - main
   repository_dispatch:
     types: [content_update]
 
@@ -18,13 +21,13 @@ jobs:
       - name: Checkout content
         uses: actions/checkout@v3
         with:
-          repository: erofteev-dev/content
+          repository: erofteev/content
           path: temp_content
 
-      - name: Move articles to src directory
+      - name: Copy articles to src directory
         run: |
           mkdir -p src/content
-          mv temp_content/content/* src/content/
+          cp -R temp_content/content/* src/content/
           rm -rf temp_content
 
       - name: Setup Node.js
@@ -37,12 +40,6 @@ jobs:
 
       - name: Build site
         run: npm run build
-
-      - name: Create gh-pages branch if not exists
-        run: |
-          git fetch origin gh-pages || echo "gh-pages branch does not exist yet"
-          git checkout -b gh-pages || echo "Already on gh-pages branch"
-        continue-on-error: true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
