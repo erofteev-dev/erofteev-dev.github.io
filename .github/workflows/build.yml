@@ -10,13 +10,13 @@ jobs:
 
     steps:
       - name: Checkout platform
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Create temporary content directory
         run: mkdir -p temp_content
 
       - name: Checkout content
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: erofteev-dev/content
           path: temp_content
@@ -28,9 +28,9 @@ jobs:
           rm -rf temp_content
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: "14"
+          node-version: 16
 
       - name: Install dependencies
         run: npm install
