@@ -10,7 +10,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout platform
         uses: actions/checkout@v3
@@ -21,10 +21,11 @@ jobs:
       - name: Checkout content
         uses: actions/checkout@v3
         with:
-          repository: erofteev/content
+          repository: erofteev-dev/content
           path: temp_content
+          token: ${{ secrets.DEPLOY_TOKEN }}
 
-      - name: Copy articles to src directory
+      - name: Move articles to src directory
         run: |
           mkdir -p src/content
           cp -R temp_content/content/* src/content/
@@ -44,7 +45,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: ./site
 
       - name: Clean up content
