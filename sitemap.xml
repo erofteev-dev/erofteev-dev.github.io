@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<!--
-	Всего страниц на сайте: 11
-	Страниц в sitemap: 4
+	Всего страниц на сайте: 14
+	Страниц в sitemap: 7
 	-->
+
+	<url>
+		<loc>https://example.com/eshhyo-odna-stazapis-v-bloge/</loc>
+		<priority>1</priority>
+	</url>
+
+	<url>
+		<loc>https://example.com/hello-world/</loc>
+		<priority>1</priority>
+	</url>
 
 	<url>
 		<loc>https://example.com/404.html</loc>
@@ -17,6 +27,11 @@
 
 	<url>
 		<loc>https://example.com/tags/</loc>
+		<priority>1</priority>
+	</url>
+
+	<url>
+		<loc>https://example.com/tags/blog/</loc>
 		<priority>1</priority>
 	</url>
 

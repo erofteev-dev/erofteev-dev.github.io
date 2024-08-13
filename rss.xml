@@ -4,5 +4,15 @@
     <link>https://example.com</link>
     <description>Шаблон для создания сайтов</description>
     
-    <language>ru-ru</language></channel>
+    <language>ru-ru</language><item>
+      <title>hello world</title>
+      <link>https://example.com/hello-world/</link>
+      <description>ПриСамая первая статья в � (почти)</description><pubDate>2024-08-13T00:00:00Z</pubDate>
+      <guid>https://example.com/hello-world/</guid>
+      <author>erofteev</author></item><item>
+      <title>Ещё одна стазапись в блоге</title>
+      <link>https://example.com/eshhyo-odna-stazapis-v-bloge/</link>
+      <description>Новая запись в блоге</description><pubDate>2024-08-13T00:00:00Z</pubDate>
+      <guid>https://example.com/eshhyo-odna-stazapis-v-bloge/</guid>
+      <author>erofteev</author><category>блог</category></item></channel>
 </rss>
