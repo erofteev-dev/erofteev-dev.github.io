@@ -2,16 +2,16 @@
 
   {
     "id": 1,
-    "title": "Ещё одна стазапись в блоге",
+    "title": "hello world",
     "content": "",
-    "url": "/eshhyo-odna-stazapis-v-bloge/"
+    "url": "/hello-world/"
   },
 
   {
     "id": 2,
-    "title": "hello world",
+    "title": "Ещё одна стазапись в блоге",
     "content": "",
-    "url": "/hello-world/"
+    "url": "/eshhyo-odna-stazapis-v-bloge/"
   }
 
 ]
