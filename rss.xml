@@ -5,14 +5,9 @@
     <description>Блог о веб-разработке: статьи и руководства по фронтенду, backend, вёрстке и анимациям. Обзор технологий, таких как React, Vue, Angular, JavaScript, TypeScript, Node.js, Docker, API, Lottie, GSAP, WordPress, SQL и многое другое. Полезные советы для разработчиков, примеры кода и лучшие практики</description>
     
     <language>ru-ru</language><item>
-      <title>Ещё одна стазапись в блоге</title>
-      <link>https://erofteev-dev.github.io/eshhyo-odna-stazapis-v-bloge/</link>
-      <description>Новая запись в блоге</description><pubDate>2024-08-13T00:00:00Z</pubDate>
-      <guid>https://erofteev-dev.github.io/eshhyo-odna-stazapis-v-bloge/</guid>
-      <author>erofteev</author><category>блог</category></item><item>
-      <title>hello world</title>
-      <link>https://erofteev-dev.github.io/hello-world/</link>
-      <description>ПриСамая первая статья в � (почти)</description><pubDate>2024-08-13T00:00:00Z</pubDate>
-      <guid>https://erofteev-dev.github.io/hello-world/</guid>
-      <author>erofteev</author></item></channel>
+      <title>Локальный сервер PHP и MySQL с помощью Docker Compose</title>
+      <link>https://erofteev-dev.github.io/lokalnyj-server-php-i-mysql-s-pomoshhyu-docker-compose/</link>
+      <description>Как быстро развернуть сервер с помощью Docker.</description><pubDate>2024-09-01T00:00:00Z</pubDate>
+      <guid>https://erofteev-dev.github.io/lokalnyj-server-php-i-mysql-s-pomoshhyu-docker-compose/</guid>
+      <author>erofteev</author><category>backend</category></item></channel>
 </rss>
